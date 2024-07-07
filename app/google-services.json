@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "700621715788",
+    "project_id": "worldtour-26775",
+    "storage_bucket": "worldtour-26775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700621715788:android:a06deadccd19fd3ce837e9",
+        "android_client_info": {
+          "package_name": "com.dimasadjie.worldtour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQCwNU6ZKOvtbCWSzVogzMaVZ9FT94IfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WorldTour</string>
+    <string name="maps">AIzaSyAB_YX1hjxT69BkM3dvZeQ_y0tCqeJLHYM</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_mahalmaps">Mahalmaps</string>
+    <string name="title_activity_balimaps">Balimaps</string>
+    <string name="title_activity_chinamaps">Chinamaps</string>
+    <string name="title_activity_parismaps">Parismaps</string>
+    <string name="title_activity_pisamaps">Pisamaps</string>
+    <string name="title_activity_romamaps">Romamaps</string>
+    <string name="title_activity_singaporemaps">Singaporemaps</string>
+    <string name="title_activity_sydneymaps">Sydneymaps</string>
+</resources>

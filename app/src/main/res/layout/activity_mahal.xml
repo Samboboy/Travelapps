@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mahal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/MahalBG"
+            android:layout_width="412dp"
+            android:layout_height="311dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedBottomCorners"
+            app:srcCompat="@drawable/mahalbg"
+            tools:layout_editor_absoluteX="-1dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-28dp"
+        android:id="@+id/card_view">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Time in India"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/timeindia"
+                android:text="This is data"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="30dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="432dp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taj Mahal adalah sebuah mausoleum megah yang terbuat dari marmer putih yang terletak di Agra, India. Dibangun pada abad ke-17 oleh Kaisar Mughal Shah Jahan sebagai peringatan untuk istri tercintanya, Mumtaz Mahal, bangunan ini merupakan simbol cinta abadi. Arsitektur Taj Mahal menggabungkan unsur-unsur gaya Persia, Islam, dan India."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="432dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:onClick="back"
+                    android:layout_marginRight="5dp"
+                    android:text="Back"
+                    app:cornerRadius="32dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton2"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:onClick="maps"
+                    android:text="Maps"
+                    app:cornerRadius="32dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    tools:layout_editor_absoluteX="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enjoy in India"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
